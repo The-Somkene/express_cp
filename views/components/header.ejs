@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="/header.css" />
+<header>
+  <div class="main-h">
+    <div id="title">
+      <p>HealthLand Insurance</p>
+      <img class="logo" src="/logo.svg" alt="Logo" />
+    </div>
+    <nav>
+      <ul class="nav_link">
+        <% if (page === "home") { %>
+        <li><a href="#hero">Home</a></li>
+        <% } else { %>
+        <li><a href="/">Home</a></li>
+        <% } %>
+
+        <li><a href="/aboutUs">About Us</a></li>
+        <li><a href="/services">Our Services</a></li>
+        <li><a href="/partner">Partner with Us</a></li>
+      </ul>
+    </nav>
+    <a href="/contact"><button>Contact Us</button></a>
+  </div>
+</header>

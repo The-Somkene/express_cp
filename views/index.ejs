@@ -1,11 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/index.css" />
+    <title>Home Page</title>
+  </head>
+  <body>
+    <!-- Include the header component -->
+    <%- include('components/header', {page:"home"}) %>
+    <!--Main Section-->
+    <main>
+      <!--Hero Section-->
+      <div>
+        <div id="hero" class="main">
+          <img src="/hero.jpg" alt="hero image" />
+          <div id="hero_text">
+            <h1>The next generation <span id="diff">business HMO</span></h1>
+            <p>
+              Gain access to the best quality of healthcare services for your
+              team and their families
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--Divider-->
+      <div class="divider">
+        <div class="main divid">
+          <p>Our Plans</p>
+        </div>
+      </div>
+      <!--Our Plans Section-->
+      <section>
+        <div class="main">
+          <div class="plans">
+            <!--Individual Plan-->
+            <div class="plans_content">
+              <img class="plans_img" src="/individual.jpg" alt="individual" />
+              <p>Individual</p>
+            </div>
+            <!--Couple Plan-->
+            <div class="plans_content">
+              <img class="plans_img" src="/couple.jpg" alt="individual" />
+              <p>Couple</p>
+            </div>
+            <!--Family Plan-->
+            <div class="plans_content">
+              <img class="plans_img" src="/family.jpg" alt="individual" />
+              <p>Family</p>
+            </div>
+            <!--Business Plan-->
+            <div class="plans_content">
+              <img class="plans_img" src="/business.jpg" alt="individual" />
+              <p>Business</p>
+            </div>
+            <!--International Plan-->
+            <div class="plans_content">
+              <img
+                class="plans_img"
+                src="/international.jpg"
+                alt="individual"
+              />
+              <p>International</p>
+            </div>
+            <!--Critical Care Plan-->
+            <div class="plans_content">
+              <img class="plans_img" src="/criticalCare.jpg" alt="individual" />
+              <p>Critical Care</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--Footer Section-->
+    <footer class="foot">
+      <div class="main last">
+        <div class="foot_items">
+          <a href="/ourTeam" class="">Our team</a>
+          <a href="/aboutUs" class="">About us</a>
+          <a href="/contact" class="">Contact</a>
+          <div>
+            <a href="/facebook.com" class="">Facebook</a>
+          </div>
+          <div>
+            <a href="/instagram.com" class="">Instagram</a>
+          </div>
+          <div>
+            <a href="/x.com" class="">Twitter</a>
+          </div>
+        </div>
+        <div class="subscribe">
+          <h3 class="">Subscribe to get latest updates</h3>
+          <div class="p-cunt">
+            <input type="text" class="" placeholder="Your email " />
+            <button class="btn">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
